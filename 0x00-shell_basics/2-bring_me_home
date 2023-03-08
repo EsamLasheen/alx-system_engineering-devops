@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $HOME
+cd ~ # ~ is a shortcut for the user's home directory
