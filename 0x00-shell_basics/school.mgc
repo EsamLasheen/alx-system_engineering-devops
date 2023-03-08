@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Create a temporary file with the magic pattern
+echo "0 string SCHOOL School data file" > tmp.mgc
+
+# Compile the magic file using file -C
+file -C -m tmp.mgc
+
+# Rename the compiled magic file to school.mgc
+mv tmp.mgc.mgc school.mgc
+
+# Remove the temporary file
+rm tmp.mgc
